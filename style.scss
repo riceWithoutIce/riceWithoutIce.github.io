@@ -25,7 +25,15 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  // max-width: 740px;
+  max-width: 100%;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.containerMain {
+  margin: 0 auto;
+  max-width: 960px;
   padding: 0 10px;
   width: 100%;
 }
@@ -73,7 +81,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: gainsboro;
   }
 }
 
@@ -152,11 +160,15 @@ img {
 
 .wrapper-masthead {
   margin-bottom: 50px;
+  height: 240px;
+  background-image: url(/images/Common/1.jpg);
+  background-size: 100% auto;
+  background-position: center;
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  // padding: 20px 0;
+  // border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -191,12 +203,13 @@ img {
 }
 
 .site-name {
+  float: left;
   margin: 0;
-  color: $darkGray;
+  color: whitesmoke;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
+  font-weight: bolder;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 
@@ -212,10 +225,10 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 8px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
-
+  font-size: 16px;
+  
   @include mobile {
     float: none;
     margin-top: 9px;
@@ -225,10 +238,10 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: white;
     text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-weight: bold;
+    letter-spacing: 2px;
 
     @include mobile {
       margin: 0 10px;
@@ -274,8 +287,8 @@ nav {
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  // border-bottom: 1px solid #ddd;
+  // background-color: whitesmoke;
 }
 
 footer {
